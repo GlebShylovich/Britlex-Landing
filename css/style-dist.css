@@ -1,0 +1,1570 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f5f5;
+}
+
+.excerpt {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8f95a5;
+}
+
+.caption {
+  font-weight: 600;
+  font-size: 30px;
+  color: #263238;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 48px;
+  color: #000000;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 20px;
+  color: #8f95a5;
+}
+
+.container {
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.logo .logo_text_black {
+  color: #000000;
+  font-weight: 400;
+  font-size: 36px;
+}
+.logo .logo_text_gray {
+  color: #8f95a5;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.header {
+  padding: 55px 0;
+}
+.header .header_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .menu .menu_item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #263238;
+  text-decoration: none;
+}
+.header .header_button {
+  display: block;
+  border: 2px solid #263238;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  background: none;
+  padding: 17px 57px;
+}
+.header .burger {
+  display: none;
+}
+.header .burger #toggle {
+  display: none;
+}
+.header .burger .hamburger {
+  position: absolute;
+  width: 30px;
+  height: 45px;
+  margin-left: -2em;
+  margin-top: -20px;
+  z-index: 5;
+}
+.header .burger .hamburger div {
+  position: relative;
+  width: 30px;
+  height: 3px;
+  background: #39515e;
+  border-radius: 1px;
+  margin-top: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.header .burger .nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.header .burger .nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+.header .burger .bottom-bun {
+  width: 23px;
+}
+.header .burger nav {
+  text-align: left;
+  margin-left: 25px;
+}
+.header .burger nav a {
+  position: relative;
+  text-decoration: none;
+  color: #000000;
+  font-size: 24px;
+  display: inline-block;
+  margin-top: 1.25em;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+.header .burger nav a:before {
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0.25em;
+  background-color: black;
+  left: -0.5em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.header .burger nav a:hover:before {
+  height: 100%;
+}
+.header .burger #toggle:checked + .hamburger .top-bun {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: 25px;
+}
+.header .burger #toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.header .burger #toggle:checked + .hamburger .meat {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: -3.5px;
+}
+.header .burger #toggle:checked + .hamburger + .nav {
+  top: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.main .container .learn {
+  padding: 45px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .container .learn .learn_text_box {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.main .container .learn .learn_text_box .title {
+  font-weight: 600;
+  font-size: 64px;
+  color: #000000;
+  width: 80%;
+}
+.main .container .learn .learn_text_box .subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  color: #8f95a5;
+  padding-bottom: 60px;
+  width: 80%;
+}
+.main .container .learn .learn_text_box .learn_button {
+  background: #263238;
+  border: 1px solid #263238;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffffff;
+  padding: 32px 117.5px;
+}
+.main .container .learn .learn_image_box {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.main .container .learn .learn_image_box img {
+  width: 100%;
+}
+.main .container .skills {
+  padding: 100px 0;
+  width: 100%;
+}
+.main .container .skills .heading_skills {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+  text-align: center;
+  padding-bottom: 45px;
+}
+.main .container .skills .skills_table {
+  padding: 45px 0 100px 0;
+  display: -ms-grid;
+  display: grid;
+          grid-template-areas: "speaking writing reading" "speaking listening listening";
+  -ms-grid-columns: 1fr 18px 1fr 18px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 531px 18px 343px;
+  grid-template-rows: 531px 343px;
+  grid-gap: 18px;
+}
+.main .container .skills .skills_table .skills_container {
+  width: 81.6091954023%;
+  height: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .container .skills .skills_table .skills_button {
+  display: block;
+  background: #263238;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  padding: 16.5px 0;
+  width: 60%;
+  border: 1px solid #263238;
+  margin-top: 15px;
+}
+.main .container .skills .skills_table .skills_listening {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: listening;
+  background: #e5e5e5;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .container .skills .skills_table .skills_listening img {
+  width: 70%;
+}
+.main .container .skills .skills_table .skills_listening .caption_image {
+  display: none;
+}
+.main .container .skills .skills_table .skills_listening .excerpt_image {
+  display: none;
+}
+.main .container .skills .skills_table .skills_listening .skills_container_listening {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .container .skills .skills_table .skills_listening .skills_container_listening .listening_button_box {
+  display: none;
+}
+.main .container .skills .skills_table .skills_speaking {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: speaking;
+  background: #e5e5e5;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main .container .skills .skills_table .skills_speaking img {
+  width: 100%;
+}
+.main .container .skills .skills_table .skills_speaking .skills_speaking_container {
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .container .skills .skills_table .skills_speaking .excerpt_speaking {
+  font-weight: 400;
+  line-height: 24px;
+  color: #8f95a5;
+  padding: 10px 0;
+}
+.main .container .skills .skills_table .skills_speaking .main__skills-image-speaking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .container .skills .skills_table .skills_reading {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: reading;
+  background: #e5e5e5;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main .container .skills .skills_table .skills_reading img {
+  width: 100%;
+}
+.main .container .skills .skills_table .skills_writing {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: writing;
+  background: #e5e5e5;
+  border-radius: 10px;
+}
+.main .container .skills .skills_table .skills_writing img {
+  width: 100%;
+}
+.main .container .skills .skills_table .skills_writing .main__skills-image-writing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.main .about_us {
+  padding: 100px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .about_us .about_us_text_box {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+.main .about_us .about_us_text_box .description_about_us {
+  font-weight: 400;
+  font-size: 20px;
+  color: #8f95a5;
+  width: 77%;
+}
+.main .about_us .about_us_text_box .heading_about_us {
+  font-weight: 600;
+  font-size: 48px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+.main .about_us .about_us_text_box .statistic {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 77%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+.main .about_us .about_us_text_box .statistic .statistic_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .about_us .about_us_text_box .statistic .number_text {
+  font-weight: 600;
+  font-size: 48px;
+  color: #2a3246;
+}
+.main .about_us .about_us_text_box .statistic .statistic_text {
+  font-weight: 400;
+  font-size: 20px;
+  color: #8f95a5;
+}
+.main .about_us .about_us_image_box {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+.main .about_us .about_us_image_box img {
+  width: 100%;
+}
+.main .about_us .about_us_image_box .heading_about_us_image {
+  display: none;
+}
+.main .pricing {
+  padding: 100px 0;
+}
+.main .pricing .pricing_heading {
+  text-align: center;
+}
+.main .pricing .pricing_table {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+      -ms-grid-rows: auto 10px auto 10px auto 10px auto;
+          grid-template-areas: "online_test_text_image lesson_image webinar_image" "online_test_caption lesson_caption webinar_caption" "online_test_description lesson_description webinar_description" "online_test_price lesson_price webinar_price";
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.main .pricing .pricing_table .price_container {
+  width: 90%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .pricing .pricing_table .price_container .caption_slim {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  color: #263238;
+}
+.main .pricing .pricing_table .price_container .price_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #546269;
+}
+.main .pricing .pricing_table .online_test_image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: online_test_text_image;
+}
+.main .pricing .pricing_table .lesson_image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: lesson_image;
+}
+.main .pricing .pricing_table .webinar_image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: webinar_image;
+}
+.main .pricing .pricing_table .caption_online_test {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: online_test_caption;
+}
+.main .pricing .pricing_table .caption_lesson {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: lesson_caption;
+}
+.main .pricing .pricing_table .caption_webinar {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: webinar_caption;
+}
+.main .pricing .pricing_table .description_online_test {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: online_test_description;
+}
+.main .pricing .pricing_table .desciption_lesson {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: lesson_description;
+}
+.main .pricing .pricing_table .desciption_webinar {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+  grid-area: webinar_description;
+}
+.main .pricing .pricing_table .price_online_test {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: online_test_price;
+  background: #eeeeee;
+  border-radius: 5px;
+  width: 60%;
+}
+.main .pricing .pricing_table .price_lesson {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+  grid-area: lesson_price;
+  background: #eeeeee;
+  border-radius: 5px;
+  width: 60%;
+}
+.main .pricing .pricing_table .price_webinar {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
+  grid-area: webinar_price;
+  background: #eeeeee;
+  border-radius: 5px;
+  width: 60%;
+}
+.main .contact_us {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .contact_us .contact_us_text_box {
+  -ms-flex-preferred-size: 59%;
+      flex-basis: 59%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.main .contact_us .contact_us_text_box .description_contact_us {
+  width: 58%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8f95a5;
+  padding-bottom: 52px;
+  padding-top: 37px;
+}
+.main .contact_us .contact_us_text_box .subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+.main .contact_us .contact_us_text_box .subscribe input {
+  border: 1px solid #8f95a5;
+  border-radius: 10px;
+  width: 59%;
+  background: none;
+  padding-left: 35px;
+  padding-top: 31.5px;
+  padding-bottom: 31.5px;
+}
+.main .contact_us .contact_us_text_box .subscribe input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8f95a5;
+}
+.main .contact_us .contact_us_text_box .subscribe input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8f95a5;
+}
+.main .contact_us .contact_us_text_box .subscribe input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8f95a5;
+}
+.main .contact_us .contact_us_text_box .subscribe input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8f95a5;
+}
+.main .contact_us .contact_us_text_box .subscribe input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8f95a5;
+}
+.main .contact_us .contact_us_text_box .subscribe .subscribe_button {
+  background: #263238;
+  border-radius: 10px;
+  border: 1px solid #263238;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  padding: 24px 0;
+  width: 39%;
+}
+.main .contact_us .contact_us_image_box {
+  -ms-flex-preferred-size: 39%;
+      flex-basis: 39%;
+}
+.main .contact_us .contact_us_image_box img {
+  width: 100%;
+}
+.main .contact_us .contact_us_image_box .heading_contact_us_image {
+  display: none;
+}
+
+.footer .footer_container {
+  margin: 65px auto;
+  padding-top: 31px;
+  border-top: 1px solid #c4c4c4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .footer_container .footer_link {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #8f95a5;
+  text-decoration: none;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .excerpt {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .caption {
+    font-size: 30px;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .logo .logo_text_black {
+    font-size: 30px;
+  }
+  .logo .logo_text_gray {
+    font-size: 30px;
+  }
+
+  .header {
+    padding: 25px 0;
+  }
+  .header .header_container .menu {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .header .header_container .menu .menu_item {
+    font-size: 16px;
+  }
+  .header .header_container .header_button {
+    padding: 12px 40px;
+    font-size: 18px;
+  }
+
+  .main .container .learn {
+    padding: 25px 0;
+  }
+  .main .container .learn .learn_text_box .title {
+    font-size: 48px;
+    padding-bottom: 20px;
+  }
+  .main .container .learn .learn_text_box .subtitle {
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+  .main .container .learn .learn_text_box .learn_button {
+    padding: 22px 80px;
+    font-size: 24px;
+    border-radius: 5px;
+  }
+  .main .container .skills .heading_skills {
+    font-size: 36px;
+  }
+  .main .container .skills .skills_table {
+    -ms-grid-columns: 1fr 18px 1fr 18px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 441px 18px 210px;
+    grid-template-rows: 441px 210px;
+  }
+  .main .container .skills .skills_table > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .main .container .skills .skills_table > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .main .container .skills .skills_table > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+  .main .container .skills .skills_table > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .main .container .skills .skills_table > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .main .container .skills .skills_table > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+  }
+  .main .container .skills .skills_table .caption {
+    font-size: 22px;
+  }
+  .main .container .skills .skills_table .excerpt_speaking {
+    font-size: 14px;
+  }
+  .main .container .skills .skills_table .skills_button {
+    padding: 16px 40px;
+    margin-top: 10px;
+  }
+  .main .container .about_us .about_us_text_box .heading_about_us {
+    margin: 0;
+  }
+  .main .container .about_us .about_us_text_box .statistic {
+    padding-top: 25px;
+  }
+  .main .container .about_us .about_us_text_box .statistic .number_text {
+    font-size: 30px;
+  }
+  .main .container .about_us .about_us_text_box .statistic .statistic_text {
+    font-size: 16px;
+  }
+  .main .container .pricing .pricing_table img {
+    width: 100%;
+  }
+  .main .container .pricing .pricing_table .price_container .caption_slim {
+    font-size: 24px;
+  }
+  .main .container .pricing .pricing_table .price_container .price_text {
+    font-size: 16px;
+  }
+  .main .container .pricing .pricing_table .price_online_test {
+    width: 70%;
+  }
+  .main .container .pricing .pricing_table .price_lesson {
+    width: 70%;
+  }
+  .main .container .pricing .pricing_table .price_webinar {
+    width: 70%;
+  }
+  .main .container .contact_us .contact_us_text_box .description_contact_us {
+    padding: 25px 0 35px 0;
+    width: 100%;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe {
+    width: 100%;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input {
+    width: 59%;
+    padding-left: 35px;
+    padding-top: 21.5px;
+    padding-bottom: 21.5px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::-moz-placeholder {
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::placeholder {
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe .subscribe_button {
+    font-size: 16px;
+    padding: 14px 0;
+    width: 39%;
+  }
+
+  .footer .footer_container .footer_link {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .excerpt {
+    font-size: 13px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .caption {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .header {
+    padding: 25px 0;
+  }
+  .header .header_container .menu {
+    display: none;
+  }
+  .header .header_container .header_button {
+    display: none;
+  }
+  .header .header_container .burger {
+    display: block;
+  }
+
+  .main .container .learn {
+    padding: 25px 0;
+  }
+  .main .container .learn .learn_text_box .title {
+    font-size: 36px;
+    padding-bottom: 25px;
+  }
+  .main .container .learn .learn_text_box .subtitle {
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+  .main .container .learn .learn_text_box .learn_button {
+    padding: 20px 67px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  .main .container .skills .heading_skills {
+    font-size: 30px;
+  }
+  .main .container .skills .skills_table {
+    -ms-grid-columns: 1fr 18px 1fr 18px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 441px 18px 210px;
+    grid-template-rows: 441px 210px;
+  }
+  .main .container .skills .skills_table > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .main .container .skills .skills_table > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .main .container .skills .skills_table > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+  .main .container .skills .skills_table > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .main .container .skills .skills_table > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .main .container .skills .skills_table > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+  }
+  .main .container .skills .skills_table .caption {
+    font-size: 20px;
+  }
+  .main .container .skills .skills_table .skills_button {
+    font-size: 16px;
+    padding: 10px 0;
+    width: 90%;
+  }
+  .main .container .skills .skills_table .skills_listening img {
+    width: 50%;
+  }
+  .main .container .skills .skills_table .skills_speaking .skills_speaking_container {
+    height: 95%;
+  }
+  .main .container .skills .skills_table .skills_speaking .skills_speaking_container .excerpt_speaking {
+    font-size: 13px;
+  }
+  .main .container .about_us .about_us_text_box .heading_about_us {
+    font-size: 30px;
+  }
+  .main .container .about_us .about_us_text_box .description_about_us {
+    font-size: 14px;
+  }
+  .main .container .about_us .about_us_text_box .statistic {
+    padding-top: 25px;
+  }
+  .main .container .about_us .about_us_text_box .statistic .number_text {
+    font-size: 22px;
+  }
+  .main .container .about_us .about_us_text_box .statistic .statistic_text {
+    font-size: 13px;
+  }
+  .main .container .pricing .pricing_heading {
+    font-size: 30px;
+  }
+  .main .container .pricing .pricing_table img {
+    width: 100%;
+  }
+  .main .container .pricing .pricing_table .price_container {
+    width: 85%;
+  }
+  .main .container .pricing .pricing_table .price_container .caption_slim {
+    font-size: 22px;
+  }
+  .main .container .pricing .pricing_table .price_container .price_text {
+    font-size: 16px;
+  }
+  .main .container .pricing .pricing_table .price_online_test {
+    width: 90%;
+  }
+  .main .container .pricing .pricing_table .price_lesson {
+    width: 90%;
+  }
+  .main .container .pricing .pricing_table .price_webinar {
+    width: 90%;
+  }
+  .main .container .contact_us .contact_us_text_box .heading_contact_us {
+    font-size: 30px;
+  }
+  .main .container .contact_us .contact_us_text_box .description_contact_us {
+    padding: 15px 0 25px 0;
+    width: 100%;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe {
+    width: 100%;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input {
+    width: 59%;
+    padding-left: 35px;
+    padding-top: 21.5px;
+    padding-bottom: 21.5px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::-moz-placeholder {
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::placeholder {
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe .subscribe_button {
+    font-size: 16px;
+    padding: 14px 0;
+    width: 39%;
+  }
+
+  .footer .footer_container .footer_link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .excerpt {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .caption {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+
+  .header .burger .line {
+    width: 42.35px;
+    height: 4.24px;
+  }
+  .header .burger .line:nth-child(3) {
+    width: 30px;
+  }
+
+  .main .container .learn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 25px 0;
+  }
+  .main .container .learn .learn_text_box .title {
+    font-size: 34px;
+    width: 100%;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+  .main .container .learn .learn_text_box .subtitle {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 40px;
+  }
+  .main .container .learn .learn_text_box .learn_button_wrapper {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .main .container .learn .learn_text_box .learn_button_wrapper .learn_button {
+    padding: 25px 0;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  .main .container .skills .heading_skills {
+    font-size: 30px;
+  }
+  .main .container .skills .skills_table {
+            grid-template-areas: "speaking writing" "reading listening";
+    -ms-grid-columns: 1fr 18px 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 550px 18px 550px;
+    grid-template-rows: 550px 550px;
+  }
+  .main .container .skills .skills_table .skills_button {
+    font-size: 14px;
+    padding: 14px 0;
+    width: 100%;
+  }
+  .main .container .skills .skills_table .skills_speaking .speaking_box .excerpt_speaking {
+    padding: 0;
+    font-size: 12px;
+  }
+  .main .container .skills .skills_table .skills_listening img {
+    width: 100%;
+  }
+  .main .container .skills .skills_table .skills_listening .skills_container_listening {
+    width: 81.6091954023%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .container .skills .skills_table .skills_listening .skills_container_listening .listening_box {
+    display: none;
+  }
+  .main .container .skills .skills_table .skills_listening .skills_container_listening .listening_button_box {
+    width: 100%;
+    display: block;
+  }
+  .main .container .skills .skills_table .skills_listening .skills_container_listening .excerpt_image {
+    display: block;
+  }
+  .main .container .skills .skills_table .skills_listening .skills_container_listening .caption_image {
+    display: block;
+  }
+  .main .container .about_us {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main .container .about_us .about_us_text_box .heading_about_us {
+    display: none;
+  }
+  .main .container .about_us .about_us_text_box .description_about_us {
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    font-size: 14px;
+  }
+  .main .container .about_us .about_us_text_box .statistic {
+    padding-top: 25px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  .main .container .about_us .about_us_text_box .statistic .number_text {
+    font-size: 22px;
+  }
+  .main .container .about_us .about_us_text_box .statistic .statistic_text {
+    font-size: 13px;
+  }
+  .main .container .about_us .about_us_image_box .heading_about_us_image {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .main .container .pricing .pricing_heading {
+    padding-bottom: 50px;
+  }
+  .main .container .pricing .pricing_table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .container .pricing .pricing_table .price_online_test {
+    width: 60%;
+  }
+  .main .container .pricing .pricing_table .price_lesson {
+    width: 45%;
+  }
+  .main .container .pricing .pricing_table .price_webinar {
+    width: 45%;
+  }
+  .main .container .pricing .pricing_table img {
+    width: 100%;
+  }
+  .main .container .pricing .pricing_table .price_container {
+    width: 85%;
+  }
+  .main .container .pricing .pricing_table .price_container .caption_slim {
+    font-size: 22px;
+  }
+  .main .container .pricing .pricing_table .price_container .price_text {
+    font-size: 16px;
+  }
+  .main .container .pricing .pricing_table .description_online_test {
+    width: 75%;
+    text-align: center;
+  }
+  .main .container .pricing .pricing_table .desciption_lesson {
+    width: 75%;
+    text-align: center;
+  }
+  .main .container .pricing .pricing_table .desciption_webinar {
+    width: 75%;
+    text-align: center;
+  }
+  .main .container .contact_us {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .container .contact_us .contact_us_text_box .heading_contact_us {
+    display: none;
+  }
+  .main .container .contact_us .contact_us_text_box .description_contact_us {
+    padding: 15px 0 25px 0;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe {
+    width: 100%;
+    border: 1px solid #8f95a5;
+    border-radius: 10px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input {
+    border: none;
+    width: 59%;
+    padding-left: 25px;
+    padding-top: 21.5px;
+    padding-bottom: 21.5px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::-moz-placeholder {
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::placeholder {
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe .subscribe_button {
+    font-size: 16px;
+    padding: 14px 0;
+    width: 40%;
+  }
+  .main .container .contact_us .contact_us_image_box .heading_contact_us_image {
+    display: block;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .footer .footer_container .footer_link {
+    font-size: 12px;
+  }
+  .main .container .skills .skills_table .skills_listening {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+  .main .container .skills .skills_table .skills_speaking {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  .main .container .skills .skills_table .skills_reading {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .main .container .skills .skills_table .skills_writing {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+}
+@media (max-width: 320px) {
+  .logo .logo_text_black {
+    font-size: 24px;
+  }
+  .logo .logo_text_gray {
+    font-size: 24px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .caption {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .header .burger .line {
+    width: 33.53px;
+    height: 3.35px;
+  }
+  .header .burger .line:nth-child(3) {
+    width: 23.72px;
+  }
+
+  .main .container .learn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 25px 0;
+  }
+  .main .container .learn .learn_text_box .title {
+    font-size: 24px;
+    width: 100%;
+    padding-bottom: 25px;
+    text-align: center;
+    width: 100%;
+  }
+  .main .container .learn .learn_text_box .subtitle {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 40px;
+  }
+  .main .container .learn .learn_text_box .learn_button_wrapper {
+    width: 100%;
+  }
+  .main .container .learn .learn_text_box .learn_button_wrapper .learn_button {
+    padding: 25px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  .main .container .skills .heading_skills {
+    font-size: 24px;
+  }
+  .main .container .skills .skills_table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .container .skills .skills_table .skills_button {
+    font-size: 14px;
+    padding: 10.5px 0;
+    width: 70%;
+  }
+  .main .container .skills .skills_table .caption {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .main .container .skills .skills_table .skills_speaking {
+    height: 600px;
+  }
+  .main .container .skills .skills_table .skills_speaking .skills_speaking_container {
+    height: 95%;
+  }
+  .main .container .skills .skills_table .skills_writing {
+    height: 473px;
+  }
+  .main .container .skills .skills_table .skills_reading {
+    height: 473px;
+  }
+  .main .container .skills .skills_table .skills_listening {
+    height: 473px;
+  }
+  .main .container .about_us {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main .container .about_us .about_us_text_box .heading_about_us {
+    display: none;
+  }
+  .main .container .about_us .about_us_text_box .description_about_us {
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    font-size: 14px;
+  }
+  .main .container .about_us .about_us_text_box .statistic {
+    padding-top: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .container .about_us .about_us_text_box .statistic .statistic_item {
+    padding: 15px 0;
+  }
+  .main .container .about_us .about_us_text_box .statistic .number_text {
+    font-size: 24px;
+  }
+  .main .container .about_us .about_us_text_box .statistic .statistic_text {
+    font-size: 15px;
+  }
+  .main .container .about_us .about_us_image_box .heading_about_us_image {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .main .container .pricing .pricing_heading {
+    padding-bottom: 50px;
+    font-size: 24px;
+  }
+  .main .container .pricing .pricing_table .price_container {
+    width: 85%;
+  }
+  .main .container .pricing .pricing_table .price_container .caption_slim {
+    font-size: 22px;
+  }
+  .main .container .pricing .pricing_table .price_container .price_text {
+    font-size: 16px;
+  }
+  .main .container .pricing .pricing_table .price_online_test {
+    width: 70%;
+  }
+  .main .container .pricing .pricing_table .price_lesson {
+    width: 70%;
+  }
+  .main .container .pricing .pricing_table .price_webinar {
+    width: 70%;
+  }
+  .main .container .pricing .pricing_table .description_online_test {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .main .container .pricing .pricing_table .desciption_lesson {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .main .container .pricing .pricing_table .desciption_webinar {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .main .container .contact_us {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .container .contact_us .contact_us_text_box .heading_contact_us {
+    display: none;
+  }
+  .main .container .contact_us .contact_us_text_box .description_contact_us {
+    padding: 15px 0 25px 0;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe {
+    width: 100%;
+    border: none;
+    height: 120px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input {
+    border: 1px solid #8f95a5;
+    border-radius: 10px;
+    width: 100%;
+    padding-left: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 5px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe input::placeholder {
+    font-size: 12px;
+  }
+  .main .container .contact_us .contact_us_text_box .subscribe .subscribe_button {
+    font-size: 16px;
+    padding: 9px 0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .main .container .contact_us .contact_us_image_box .heading_contact_us_image {
+    display: block;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .footer .footer_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer_container .footer_link {
+    font-size: 11px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,1323 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f5f5;
+}
+
+.excerpt {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8f95a5;
+}
+.caption {
+  font-weight: 600;
+  font-size: 30px;
+  color: #263238;
+}
+.heading {
+  font-weight: 600;
+  font-size: 48px;
+  color: #000000;
+}
+.description {
+  font-weight: 400;
+  font-size: 20px;
+  color: #8f95a5;
+}
+.container {
+  width: 87.5%;
+  margin: 0 auto;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  .logo_text_black {
+    color: #000000;
+    font-weight: 400;
+    font-size: 36px;
+  }
+  .logo_text_gray {
+    color: #8f95a5;
+    font-weight: 400;
+    font-size: 36px;
+  }
+}
+.header {
+  padding: 55px 0;
+  .header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    flex-basis: 35%;
+    justify-content: space-between;
+    .menu_item {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: #263238;
+      text-decoration: none;
+    }
+  }
+  .header_button {
+    display: block;
+    border: 2px solid #263238;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    background: none;
+    padding: 17px 57px;
+  }
+  .burger {
+    display: none;
+    #toggle {
+      display: none;
+    }
+    .hamburger {
+      position: absolute;
+      width: 30px;
+      height: 45px;
+
+      margin-left: -2em;
+      margin-top: -20px;
+      z-index: 5;
+    }
+
+    .hamburger div {
+      position: relative;
+      width: 30px;
+      height: 3px;
+      background: #39515e;
+      border-radius: 1px;
+      margin-top: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+    .nav {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #f5f5f5;
+
+      top: -100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      transform: scale(0);
+    }
+    .nav-wrapper {
+      position: relative;
+      overflow: hidden;
+      overflow-y: auto;
+      height: 100%;
+    }
+    .bottom-bun {
+      width: 23px;
+    }
+    nav {
+      text-align: left;
+      margin-left: 25px;
+    }
+    nav a {
+      position: relative;
+      text-decoration: none;
+      color: #000000;
+      font-size: 24px;
+      display: inline-block;
+      margin-top: 1.25em;
+      transition: color 0.2s ease-in-out;
+    }
+    nav a:before {
+      content: "";
+      height: 0;
+      position: absolute;
+      width: 0.25em;
+      background-color: black;
+      left: -0.5em;
+      transition: all 0.2s ease-in-out;
+    }
+    nav a:hover:before {
+      height: 100%;
+    }
+    #toggle:checked + .hamburger .top-bun {
+      transform: rotate(-45deg);
+      margin-top: 25px;
+    }
+    #toggle:checked + .hamburger .bottom-bun {
+      opacity: 0;
+      transform: rotate(45deg);
+    }
+    #toggle:checked + .hamburger .meat {
+      transform: rotate(45deg);
+      margin-top: -3.5px;
+    }
+
+    #toggle:checked + .hamburger + .nav {
+      top: 0;
+      transform: scale(1);
+    }
+  }
+}
+
+.main {
+  .container {
+    .learn {
+      padding: 45px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .learn_text_box {
+        flex-basis: 50%;
+        .title {
+          font-weight: 600;
+          font-size: 64px;
+          color: #000000;
+          width: 80%;
+        }
+        .subtitle {
+          font-weight: 400;
+          font-size: 24px;
+          color: #8f95a5;
+          padding-bottom: 60px;
+          width: 80%;
+        }
+        .learn_button {
+          background: #263238;
+          border: 1px solid #263238;
+          border-radius: 15px;
+          font-weight: 400;
+          font-size: 36px;
+          color: #ffffff;
+          padding: 32px 117.5px;
+        }
+      }
+      .learn_image_box {
+        flex-basis: 50%;
+        & img {
+          width: 100%;
+        }
+      }
+    }
+    .skills {
+      padding: 100px 0;
+      width: 100%;
+      .heading_skills {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 80px;
+        color: #000000;
+        text-align: center;
+        padding-bottom: 45px;
+      }
+      .skills_table {
+        padding: 45px 0 100px 0;
+        display: grid;
+        grid-template-areas:
+          "speaking writing reading"
+          "speaking listening listening";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 531px 343px;
+        grid-gap: 18px;
+        .skills_container {
+          width: 355 / 435 * 100%;
+          height: 95%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .skills_button {
+          display: block;
+          background: #263238;
+          border-radius: 5px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 27px;
+          color: #ffffff;
+          padding: 16.5px 0;
+          width: 60%;
+          border: 1px solid #263238;
+          margin-top: 15px;
+        }
+        .skills_listening {
+          grid-area: listening;
+          background: #e5e5e5;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          & img {
+            width: 100%;
+          }
+          .caption_image {
+            display: none;
+          }
+          .excerpt_image {
+            display: none;
+          }
+          .skills_container_listening {
+            width: 90%;
+            height: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .listening_button_box{
+              display: none;
+            }
+          }
+        }
+        .skills_speaking {
+          grid-area: speaking;
+          background: #e5e5e5;
+          border-radius: 10px;
+          display: flex;
+          & img {
+            width: 100%;
+          }
+          .skills_speaking_container {
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          .excerpt_speaking {
+            font-weight: 400;
+            line-height: 24px;
+            color: #8f95a5;
+            padding: 10px 0;
+          }
+          .main__skills-image-speaking {
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .skills_reading {
+          grid-area: reading;
+          background: #e5e5e5;
+          border-radius: 10px;
+          display: flex;
+          & img {
+            width: 100%;
+          }
+        }
+        .skills_writing {
+          grid-area: writing;
+          background: #e5e5e5;
+          border-radius: 10px;
+          & img {
+            width: 100%;
+          }
+          .main__skills-image-writing {
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+  .about_us {
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .about_us_text_box {
+      flex-basis: 60%;
+      .description_about_us {
+        font-weight: 400;
+        font-size: 20px;
+        color: #8f95a5;
+        width: 77%;
+      }
+      .heading_about_us {
+        font-weight: 600;
+        font-size: 48px;
+        color: #000000;
+        padding-bottom: 20px;
+      }
+      .statistic {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        width: 77%;
+        justify-content: space-between;
+        padding-top: 50px;
+        .statistic_item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .number_text {
+          font-weight: 600;
+          font-size: 48px;
+          color: #2a3246;
+        }
+        .statistic_text {
+          font-weight: 400;
+          font-size: 20px;
+          color: #8f95a5;
+        }
+      }
+    }
+    .about_us_image_box {
+      flex-basis: 40%;
+      & img {
+        width: 100%;
+      }
+      .heading_about_us_image {
+        display: none;
+      }
+    }
+  }
+  .pricing {
+    padding: 100px 0;
+    .pricing_heading {
+      text-align: center;
+    }
+    .pricing_table {
+      width: 100%;
+      display: grid;
+      grid-template-areas:
+        "online_test_text_image lesson_image webinar_image"
+        "online_test_caption lesson_caption webinar_caption"
+        "online_test_description lesson_description webinar_description"
+        "online_test_price lesson_price webinar_price";
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      .price_container {
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        .caption_slim {
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 45px;
+          color: #263238;
+        }
+        .price_text {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 27px;
+          color: #546269;
+        }
+      }
+      .online_test_image {
+        grid-area: online_test_text_image;
+      }
+      .lesson_image {
+        grid-area: lesson_image;
+      }
+      .webinar_image {
+        grid-area: webinar_image;
+      }
+      .caption_online_test {
+        grid-area: online_test_caption;
+      }
+      .caption_lesson {
+        grid-area: lesson_caption;
+      }
+      .caption_webinar {
+        grid-area: webinar_caption;
+      }
+      .description_online_test {
+        grid-area: online_test_description;
+      }
+      .desciption_lesson {
+        grid-area: lesson_description;
+      }
+      .desciption_webinar {
+        grid-area: webinar_description;
+      }
+      .price_online_test {
+        grid-area: online_test_price;
+        background: #eeeeee;
+        border-radius: 5px;
+        width: 60%;
+      }
+      .price_lesson {
+        grid-area: lesson_price;
+        background: #eeeeee;
+        border-radius: 5px;
+        width: 60%;
+      }
+      .price_webinar {
+        grid-area: webinar_price;
+        background: #eeeeee;
+        border-radius: 5px;
+        width: 60%;
+      }
+    }
+  }
+  .contact_us {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .contact_us_text_box {
+      flex-basis: 59%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      .description_contact_us {
+        width: 58%;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #8f95a5;
+        padding-bottom: 52px;
+        padding-top: 37px;
+      }
+      .subscribe {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        input {
+          border: 1px solid #8f95a5;
+          border-radius: 10px;
+          width: 59%;
+          background: none;
+          padding-left: 35px;
+          padding-top: 31.5px;
+          padding-bottom: 31.5px;
+
+          &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #8f95a5;
+          }
+        }
+        .subscribe_button {
+          background: #263238;
+          border-radius: 10px;
+          border: 1px solid #263238;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+          color: #ffffff;
+          padding: 24px 0;
+          width: 39%;
+        }
+      }
+    }
+    .contact_us_image_box {
+      flex-basis: 39%;
+      & img {
+        width: 100%;
+      }
+      .heading_contact_us_image {
+        display: none;
+      }
+    }
+  }
+}
+.footer {
+  .footer_container {
+    margin: 65px auto;
+    padding-top: 31px;
+    border-top: 1px solid #c4c4c4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer_link {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+      color: #8f95a5;
+      text-decoration: none;
+      display: block;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .excerpt {
+    font-size: 14px;
+  }
+  .container {
+    width: 95%;
+  }
+  .caption {
+    font-size: 30px;
+  }
+  .heading {
+    font-size: 36px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .logo {
+    .logo_text_black {
+      font-size: 30px;
+    }
+    .logo_text_gray {
+      font-size: 30px;
+    }
+  }
+  .header {
+    padding: 25px 0;
+    .header_container {
+      .menu {
+        flex-basis: 40%;
+        .menu_item {
+          font-size: 16px;
+        }
+      }
+      .header_button {
+        padding: 12px 40px;
+        font-size: 18px;
+      }
+    }
+  }
+  .main {
+    .container {
+      .learn {
+        padding: 25px 0;
+        .learn_text_box {
+          .title {
+            font-size: 48px;
+            padding-bottom: 20px;
+          }
+          .subtitle {
+            font-size: 20px;
+            padding-bottom: 30px;
+          }
+          .learn_button {
+            padding: 22px 80px;
+            font-size: 24px;
+            border-radius: 5px;
+          }
+        }
+      }
+      .skills {
+        .heading_skills {
+          font-size: 36px;
+        }
+        .skills_table {
+          .caption {
+            font-size: 22px;
+          }
+          .excerpt_speaking {
+            font-size: 14px;
+          }
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 441px 210px;
+          .skills_button {
+            padding: 16px 40px;
+            margin-top: 10px;
+          }
+        }
+      }
+      .about_us {
+        .about_us_text_box {
+          .heading_about_us {
+            margin: 0;
+          }
+          .statistic {
+            padding-top: 25px;
+            .number_text {
+              font-size: 30px;
+            }
+            .statistic_text {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .pricing {
+        .pricing_table {
+          & img {
+            width: 100%;
+          }
+          .price_container {
+            .caption_slim {
+              font-size: 24px;
+            }
+            .price_text {
+              font-size: 16px;
+            }
+          }
+          .price_online_test {
+            width: 70%;
+          }
+          .price_lesson {
+            width: 70%;
+          }
+          .price_webinar {
+            width: 70%;
+          }
+        }
+      }
+      .contact_us {
+        .contact_us_text_box {
+          .description_contact_us {
+            padding: 25px 0 35px 0;
+            width: 100%;
+          }
+          .subscribe {
+            width: 100%;
+            input {
+              width: 59%;
+              padding-left: 35px;
+              padding-top: 21.5px;
+              padding-bottom: 21.5px;
+
+              &::placeholder {
+                font-size: 14px;
+              }
+            }
+            .subscribe_button {
+              font-size: 16px;
+              padding: 14px 0;
+              width: 39%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .footer_container {
+      .footer_link {
+        font-size: 13px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .excerpt {
+    font-size: 13px;
+  }
+  .container {
+    width: 90%;
+  }
+  .caption {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .header {
+    padding: 25px 0;
+    .header_container {
+      .menu {
+        display: none;
+      }
+      .header_button {
+        display: none;
+      }
+      .burger {
+        display: block;
+      }
+    }
+  }
+  .main {
+    .container {
+      .learn {
+        padding: 25px 0;
+        .learn_text_box {
+          .title {
+            font-size: 36px;
+            padding-bottom: 25px;
+          }
+          .subtitle {
+            font-size: 16px;
+            padding-bottom: 30px;
+          }
+          .learn_button {
+            padding: 20px 67px;
+            font-size: 18px;
+            border-radius: 5px;
+          }
+        }
+      }
+      .skills {
+        .heading_skills {
+          font-size: 30px;
+        }
+        .skills_table {
+          .caption {
+            font-size: 20px;
+          }
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 441px 210px;
+          .skills_button {
+            font-size: 16px;
+            padding: 10px 0;
+            width: 90%;
+          }
+
+          .skills_listening {
+            & img {
+              width: 50%;
+            }
+          }
+          .skills_speaking {
+            .skills_speaking_container {
+              height: 95%;
+              .excerpt_speaking {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+      .about_us {
+        .about_us_text_box {
+          .heading_about_us {
+            font-size: 30px;
+          }
+          .description_about_us {
+            font-size: 14px;
+          }
+          .statistic {
+            padding-top: 25px;
+            .number_text {
+              font-size: 22px;
+            }
+            .statistic_text {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .pricing {
+        .pricing_heading {
+          font-size: 30px;
+        }
+        .pricing_table {
+          & img {
+            width: 100%;
+          }
+          .price_container {
+            width: 85%;
+            .caption_slim {
+              font-size: 22px;
+            }
+            .price_text {
+              font-size: 16px;
+            }
+          }
+          .price_online_test {
+            width: 90%;
+          }
+          .price_lesson {
+            width: 90%;
+          }
+          .price_webinar {
+            width: 90%;
+          }
+        }
+      }
+      .contact_us {
+        .contact_us_text_box {
+          .heading_contact_us {
+            font-size: 30px;
+          }
+          .description_contact_us {
+            padding: 15px 0 25px 0;
+            width: 100%;
+          }
+          .subscribe {
+            width: 100%;
+            input {
+              width: 59%;
+              padding-left: 35px;
+              padding-top: 21.5px;
+              padding-bottom: 21.5px;
+
+              &::placeholder {
+                font-size: 14px;
+              }
+            }
+            .subscribe_button {
+              font-size: 16px;
+              padding: 14px 0;
+              width: 39%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .footer_container {
+      .footer_link {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .excerpt {
+    font-size: 12px;
+  }
+  .container {
+    width: 90%;
+  }
+  .caption {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .heading {
+    font-size: 30px;
+  }
+  .header {
+    .burger {
+      .line {
+        width: 42.35px;
+        height: 4.24px;
+      }
+      .line:nth-child(3) {
+        width: 30px;
+      }
+    }
+  }
+  .main {
+    .container {
+      .learn {
+        flex-direction: column-reverse;
+        padding: 25px 0;
+        .learn_text_box {
+          .title {
+            font-size: 34px;
+            width: 100%;
+            padding-bottom: 25px;
+            text-align: center;
+          }
+          .subtitle {
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            padding-bottom: 40px;
+          }
+          .learn_button_wrapper {
+            width: 60%;
+            margin: 0 auto;
+            .learn_button {
+              padding: 25px 0;
+              font-size: 18px;
+              border-radius: 5px;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .skills {
+        .heading_skills {
+          font-size: 30px;
+        }
+        .skills_table {
+          grid-template-areas:
+            "speaking writing"
+            "reading listening";
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 550px 550px;
+          .skills_button {
+            font-size: 14px;
+            padding: 14px 0;
+            width: 100%;
+          }
+          .skills_speaking {
+            .speaking_box {
+              .excerpt_speaking {
+                padding: 0;
+                font-size: 12px;
+              }
+            }
+          }
+          .skills_listening {
+            & img {
+              width: 100%;
+            }
+            .skills_container_listening {
+              width: 355 / 435 * 100%;
+              flex-direction: column;
+              .listening_box {
+                display: none;
+              }
+              .listening_button_box {
+                width: 100%;
+                display: block;
+              }
+              .excerpt_image {
+                display: block;
+              }
+              .caption_image {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      .about_us {
+        flex-direction: column-reverse;
+        .about_us_text_box {
+          .heading_about_us {
+            display: none;
+          }
+          .description_about_us {
+            text-align: center;
+            width: 100%;
+            padding-top: 50px;
+            font-size: 14px;
+          }
+          .statistic {
+            padding-top: 25px;
+            justify-content: space-around;
+            width: 100%;
+            .number_text {
+              font-size: 22px;
+            }
+            .statistic_text {
+              font-size: 13px;
+            }
+          }
+        }
+        .about_us_image_box {
+          .heading_about_us_image {
+            display: block;
+            text-align: center;
+            padding-bottom: 20px;
+          }
+        }
+      }
+      .pricing {
+        .pricing_heading {
+          padding-bottom: 50px;
+        }
+        .pricing_table {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          align-items: center;
+          .price_online_test {
+            width: 60%;
+          }
+          .price_lesson {
+            width: 45%;
+          }
+          .price_webinar {
+            width: 45%;
+          }
+          & img {
+            width: 100%;
+          }
+          .price_container {
+            width: 85%;
+            .caption_slim {
+              font-size: 22px;
+            }
+            .price_text {
+              font-size: 16px;
+            }
+          }
+          .description_online_test {
+            width: 75%;
+            text-align: center;
+          }
+          .desciption_lesson {
+            width: 75%;
+            text-align: center;
+          }
+          .desciption_webinar {
+            width: 75%;
+            text-align: center;
+          }
+        }
+      }
+      .contact_us {
+        flex-direction: column;
+        .contact_us_text_box {
+          .heading_contact_us {
+            display: none;
+          }
+          .description_contact_us {
+            padding: 15px 0 25px 0;
+            width: 100%;
+            padding-top: 50px;
+            text-align: center;
+          }
+          .subscribe {
+            width: 100%;
+            border: 1px solid #8f95a5;
+            border-radius: 10px;
+            input {
+              border: none;
+              width: 59%;
+              padding-left: 25px;
+              padding-top: 21.5px;
+              padding-bottom: 21.5px;
+
+              &::placeholder {
+                font-size: 14px;
+              }
+            }
+            .subscribe_button {
+              font-size: 16px;
+              padding: 14px 0;
+              width: 40%;
+            }
+          }
+        }
+        .contact_us_image_box {
+          .heading_contact_us_image {
+            display: block;
+            text-align: center;
+            padding-bottom: 50px;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .footer_container {
+      .footer_link {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    .logo_text_black {
+      font-size: 24px;
+    }
+    .logo_text_gray {
+      font-size: 24px;
+    }
+  }
+  .container {
+    width: 95%;
+  }
+  .caption {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .heading {
+    font-size: 24px;
+  }
+  .header {
+    .burger {
+      .line {
+        width: 33.53px;
+        height: 3.35px;
+      }
+      .line:nth-child(3) {
+        width: 23.72px;
+      }
+    }
+  }
+  .main {
+    .container {
+      .learn {
+        flex-direction: column-reverse;
+        padding: 25px 0;
+        .learn_text_box {
+          .title {
+            font-size: 24px;
+            width: 100%;
+            padding-bottom: 25px;
+            text-align: center;
+            width: 100%;
+          }
+          .subtitle {
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            padding-bottom: 40px;
+          }
+          .learn_button_wrapper {
+            width: 100%;
+            .learn_button {
+              padding: 25px 0;
+              font-size: 16px;
+              border-radius: 5px;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .skills {
+        .heading_skills {
+          font-size: 24px;
+        }
+        .skills_table {
+          display: flex;
+          flex-direction: column;
+          .skills_button {
+            font-size: 14px;
+            padding: 10.5px 0;
+            width: 70%;
+          }
+          .caption {
+            padding-top: 20px;
+            padding-bottom: 10px;
+          }
+          .skills_speaking {
+            height: 600px;
+            .skills_speaking_container {
+              height: 95%;
+            }
+          }
+          .skills_writing {
+            height: 473px;
+          }
+          .skills_reading {
+            height: 473px;
+          }
+          .skills_listening {
+            height: 473px;
+          }
+        }
+      }
+      .about_us {
+        flex-direction: column-reverse;
+        .about_us_text_box {
+          .heading_about_us {
+            display: none;
+          }
+          .description_about_us {
+            text-align: center;
+            width: 100%;
+            padding-top: 50px;
+            font-size: 14px;
+          }
+          .statistic {
+            padding-top: 40px;
+            flex-direction: column;
+            .statistic_item {
+              padding: 15px 0;
+            }
+            .number_text {
+              font-size: 24px;
+            }
+            .statistic_text {
+              font-size: 15px;
+            }
+          }
+        }
+        .about_us_image_box {
+          .heading_about_us_image {
+            display: block;
+            text-align: center;
+            padding-bottom: 20px;
+          }
+        }
+      }
+      .pricing {
+        .pricing_heading {
+          padding-bottom: 50px;
+          font-size: 24px;
+        }
+        .pricing_table {
+          .price_container {
+            width: 85%;
+            .caption_slim {
+              font-size: 22px;
+            }
+            .price_text {
+              font-size: 16px;
+            }
+          }
+          .price_online_test {
+            width: 70%;
+          }
+          .price_lesson {
+            width: 70%;
+          }
+          .price_webinar {
+            width: 70%;
+          }
+          .description_online_test {
+            width: 100%;
+            padding: 20px 0;
+          }
+          .desciption_lesson {
+            width: 100%;
+            padding: 20px 0;
+          }
+          .desciption_webinar {
+            width: 100%;
+            padding: 20px 0;
+          }
+        }
+      }
+      .contact_us {
+        flex-direction: column;
+        .contact_us_text_box {
+          .heading_contact_us {
+            display: none;
+          }
+          .description_contact_us {
+            padding: 15px 0 25px 0;
+            width: 100%;
+            padding-top: 50px;
+            text-align: center;
+          }
+          .subscribe {
+            width: 100%;
+            border: none;
+            height: 120px;
+            flex-direction: column;
+            input {
+              border: 1px solid #8f95a5;
+              border-radius: 10px;
+              width: 100%;
+              padding-left: 25px;
+              padding-top: 16px;
+              padding-bottom: 16px;
+              border-radius: 5px;
+
+              &::placeholder {
+                font-size: 12px;
+              }
+            }
+            .subscribe_button {
+              font-size: 16px;
+              padding: 9px 0;
+              width: 100%;
+              border-radius: 5px;
+              font-size: 14px;
+            }
+          }
+        }
+        .contact_us_image_box {
+          .heading_contact_us_image {
+            display: block;
+            text-align: center;
+            padding-bottom: 50px;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .footer_container {
+      flex-direction: column;
+      .footer_link {
+        font-size: 11px;
+        text-align: center;
+      }
+    }
+  }
+}
